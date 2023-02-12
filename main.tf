@@ -38,30 +38,3 @@ provisioner "local-exec" {
   }
 
 }
-
-
-
-
-/*
-variable user {
-  type = list(string)
-  default = ["Petya", "Petko", "Gencho"]    
-  }
-
-variable "some_id" {
- 
-}
-resource "null_resource" "screen_output" {
-
-  triggers = {
-    
-  }
-
-  provisioner "local-exec" {
-    
-    command = <<EOT
-    echo 'Hello ${var.user["${count.index}"]}'
-    EOT
-  }
-}
-*/
